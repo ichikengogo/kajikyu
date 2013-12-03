@@ -29,7 +29,10 @@
                 nend_links[i].onclick = function(){monaca.invokeBrowser(href); return false;}
             }
         });
-        $(document).on(mobileinit, function(){ $.mobile.defaultPageTransition = none;});
+        $(document).on(mobileinit, function(){
+          $.mobile.defaultPageTransition = none;
+        });
+
         </script>
         <title>家事給</title>
     </head>
