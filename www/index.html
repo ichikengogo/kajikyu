@@ -29,6 +29,10 @@
                 nend_links[i].onclick = function(){monaca.invokeBrowser(href); return false;}
             }
         });
+        $(document).on(mobileinit, function(){
+          $.mobile.defaultPageTransition = none;
+        });
+
         </script>
         <title>家事給</title>
     </head>
@@ -43,7 +47,7 @@
                   <div class="top_info_kajikyu">200,000円</div>
               </div>
               <div class="top_contents clearfix">
-                  <a href="regist.html" data-transition="slide"><div id="top_contents_regist"></div></a>
+                  <a href="regist.html"><div id="top_contents_regist"></div></a>
                   <div id="top_contents_show"></div>
                   <div id="top_contents_review"></div>
                   <div id="top_contents_manual"></div>
